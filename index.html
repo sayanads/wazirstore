@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Now</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+overflow:hidden;
+}
+
+/* glowing background animation */
+
+body::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#00ffff,#ff00ff,#000);
+filter:blur(120px);
+animation:glowMove 8s infinite alternate;
+}
+
+@keyframes glowMove{
+0%{transform:translate(-200px,-200px);}
+100%{transform:translate(200px,200px);}
+}
+
+/* card */
+
+.card{
+position:relative;
+padding:30px;
+border-radius:20px;
+background:rgba(0,0,0,0.6);
+text-align:center;
+box-shadow:
+0 0 20px #00ffff,
+0 0 40px #00ffff,
+0 0 60px #ff00ff;
+}
+
+/* image */
+
+.card img{
+width:280px;
+border-radius:15px;
+margin-bottom:25px;
+box-shadow:
+0 0 20px #00ffff,
+0 0 40px #ff00ff;
+}
+
+/* glowing button */
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+font-size:18px;
+color:white;
+text-decoration:none;
+border-radius:50px;
+background:linear-gradient(45deg,#ff00cc,#3333ff);
+box-shadow:
+0 0 10px #ff00cc,
+0 0 30px #3333ff,
+0 0 60px #ff00cc;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 10px #ff00cc;}
+50%{box-shadow:0 0 40px #ff00cc,0 0 80px #3333ff;}
+100%{box-shadow:0 0 10px #ff00cc;}
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- CHANGE IMAGE -->
+<img src="‪C:\Users\sayan\Desktop\waxie">
+
+<br>
+
+<!-- CHANGE LINK -->
+<a href="https://t.me/Wazir365Promo" class="btn">
+CLICK TO JOIN
+</a>
+
+</div>
+
+</body>
+</html>
